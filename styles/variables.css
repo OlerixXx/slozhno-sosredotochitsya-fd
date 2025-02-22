@@ -1,4 +1,33 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+/* Цвета и шрифты, обобщённо */
+:root {
+  --purple: #DB00FF;
+  --raspberry: #FF0070;
+  --raspberry-transparent: rgba(255, 0, 112, 0.5);
+  --rose: #FFC2E6;
+  --pink: #FF8DCB;
+  --pink-light: #F1B2CE;
+  --white: #FFF1F7;
+  --gray: #353430;
+  --gray-transparent: rgba(53, 52, 48, 0.5);
+  --dark-blue: #000028;
+  --font-famaly: 'IBM Plex Mono';
+  --font-size-md: 18px;
+  --font-weight-md: 400;
+  --font-weight-lg: 700;
+}
+
+/* Не зависит от цвета темы */
+:root {
+  --p-font-size: var(--font-size-md, 18px);
+  --p-font-weight: var(--font-weight-md, 400);
+  --h1-font-size-phone: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --h1-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --h1-font-weight: var(--font-weight-lg, 700);
+  --h1-line-height: 95.7px;
+  --h2-font-size: var(--font-size-md, 18px);
+  --h2-font-weight: var(--font-weight-lg, 700);
+  --h3-font-size: var(--font-size-md, 18px);
+  --h3-font-weight: var(--font-weight-lg, 700);
+  --page-paddings: 10px;
+  --header-paddings: 10px;
+}
