@@ -11,7 +11,7 @@
   */
   --main-bg-color: var(--dark-blue, #000028);
   --accent-color: var(--raspberry, #FF0070);
-  --p-text-color: var(--pink, #F1B2CE);
+  --p-text-color: var(--rose, #F1B2CE);
   --header-bg-img: url(/images/cover-image-dark.png);
   --h1-text-color: var(--purple, #DB00FF);
   --h2-text-color: var(--raspberry, #FF0070);
@@ -31,7 +31,7 @@
   :root {
     --main-bg-color: var(--dark-blue, #000028);
     --accent-color: var(--raspberry, #FF0070);
-    --p-text-color: var(--pink, #F1B2CE);
+    --p-text-color: var(--rose, #F1B2CE);
     --header-bg-img: url(/images/cover-image-dark.png);
     --h1-text-color: var(--purple, #DB00FF);
     --h2-text-color: var(--raspberry, #FF0070);
