@@ -1,5 +1,6 @@
-/* Цвета и шрифты, обобщённо */
 :root {
+
+  /* Цвета и шрифты, обобщённо */
   --purple: #DB00FF;
   --raspberry: #FF0070;
   --raspberry-transparent: rgba(255, 0, 112, 0.5);
@@ -14,10 +15,9 @@
   --font-size-md: 18px;
   --font-weight-md: 400;
   --font-weight-lg: 700;
-}
 
-/* Не зависит от цвета темы */
-:root {
+
+  /* Не зависит от цвета темы */
   --p-font-size: var(--font-size-md, 18px);
   --p-font-weight: var(--font-weight-md, 400);
   --h1-font-size-phone: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -30,4 +30,5 @@
   --h3-font-weight: var(--font-weight-lg, 700);
   --page-paddings: 10px;
   --header-paddings: 10px;
+  --header-paddings-scale: 2;
 }

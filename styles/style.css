@@ -1,7 +1,6 @@
 .page {
   display: grid;
   gap: 40px;
-  padding: var(--page-paddings);
   font-family: var(--font-famaly), sans-serif;
   font-weight: var(--font-weight-md);
   font-size: var(--font-size-md);
@@ -18,16 +17,15 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr 1fr 1fr;
   align-items: center;
-  margin-block-end: var(--page-paddings);
-  padding: var(--header-paddings) 0 var(--header-paddings);
-  block-size: calc(100vh - calc(var(--page-paddings) * 2));
+  padding: calc(var(--header-paddings) * var(--header-paddings-scale)) var(--header-paddings) calc(var(--header-paddings) * var(--header-paddings-scale)) var(--header-paddings);
+  block-size: 100vh;
 }
 
 .header__rec::before {
   content: 'REC';
   position: absolute;
-  top: 0;
-  right: 30px;
+  top: var(--header-paddings);
+  right: 40px;
   color: var(--decorated-zone-color);
   font-size: var(--font-size-md);
   line-height: 1.4em;
@@ -36,8 +34,8 @@
 .header__rec::after {
   content: '';
   position: absolute;
-  top: 9px;
-  right: 9px;
+  top: 19px;
+  right: 19px;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--decorated-zone-color);
   background-color: var(--decorated-zone-color);
@@ -48,8 +46,8 @@
 .decorated-zone::before {
   content: '';
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: var(--header-paddings);
+  right: var(--header-paddings);
   border-top: 1px solid var(--decorated-zone-color);
   border-right: 1px solid var(--decorated-zone-color);
   inline-size: 25px;
@@ -59,8 +57,8 @@
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: var(--header-paddings);
+  left: var(--header-paddings);
   border-bottom: 1px solid var(--decorated-zone-color);
   border-left: 1px solid var(--decorated-zone-color);
   inline-size: 25px;
@@ -134,6 +132,7 @@
 .content {
   display: grid;
   gap: 50px;
+  padding: 0 var(--page-paddings);
 }
 
 .content-section {
@@ -198,8 +197,7 @@
   position: relative;
   justify-items: center;
   align-content: center;
-  margin-block-start: var(--page-paddings);
-  block-size: calc(100vh - calc(var(--page-paddings) * 2));
+  block-size: 100vh;
 }
 
 .footer__title {
@@ -213,7 +211,8 @@
 @media (width > 375px) {
   :root {
     --page-paddings: 20px;
-    --header-paddings: 85px;
+    --header-paddings: 20px;
+    --header-paddings-scale: 5.3;
   }
 
   .page {
@@ -223,6 +222,15 @@
   .header__title {
     margin-left: calc(-1 * var(--page-paddings));
     font-size: var(--h1-font-size-desktop);
+  }
+
+  .header__rec::before {
+    right: 50px;
+  }
+  
+  .header__rec::after {
+    top: 29px;
+    right: 29px;
   }
 
   .footer__title {
@@ -300,8 +308,8 @@
 }
 
 @media (width > 768px) {
-  .header {
-    padding: 0;
+  :root {
+    --header-paddings-scale: 1;
   }
 
   .header__theme-menu {
