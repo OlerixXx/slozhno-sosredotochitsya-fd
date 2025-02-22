@@ -24,7 +24,7 @@
   --footer-text-shadow-color: var(--raspberry, #FF0070);
   --section-title-text-color: var(--raspberry, #FF0070);
   --button-color: var(--raspberry, #FF0070);
-  --button-hover-color: var(--raspberry-transparent, rgba(255, 0, 112, 0.5));
+  --button-hover-color: var(--raspberry-transparent, rgba(255, 0, 112, 0.6));
 }
 
 @media (prefers-color-scheme: dark) {
