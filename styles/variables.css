@@ -3,7 +3,7 @@
   /* Цвета и шрифты, обобщённо */
   --purple: #DB00FF;
   --raspberry: #FF0070;
-  --raspberry-transparent: rgba(255, 0, 112, 0.5);
+  --raspberry-transparent: rgba(255, 0, 112, 0.4);
   --rose: #FFC2E6;
   --pink: #FF8DCB;
   --pink-light: #F1B2CE;
@@ -50,4 +50,5 @@
   --section-title-text-color: var(--raspberry, #FF0070);
   --button-color: var(--raspberry, #FF0070);
   --button-hover-color: var(--raspberry-transparent, rgba(255, 0, 112, 0.4));
+  --bg-color: var(--dark-blue, #000028);
 }
