@@ -49,6 +49,6 @@
     --footer-text-shadow-color: var(--raspberry, #FF0070);
     --section-title-text-color: var(--gray, #353430);
     --button-color: var(--gray, #353430);
-    --button-hover-color: var(--gray-transparent, rgba(255, 0, 112, 0.5));
+    --button-hover-color: var(--gray-transparent, rgba(255, 0, 112, 0.4));
   }
 }
