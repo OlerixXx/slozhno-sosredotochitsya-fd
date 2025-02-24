@@ -40,3 +40,17 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+@media (width >= 768px) {
+  :root {
+    --page-paddings: 20px;
+    --header-paddings: 20px;
+    --header-paddings-scale: 5.3;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --header-paddings-scale: 1;
+  }
+}

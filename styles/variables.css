@@ -36,6 +36,7 @@
   /* Тёмная тема - по дефолту */
   --main-bg-color: var(--dark-blue, #000028);
   --accent-color: var(--raspberry, #FF0070);
+  --link-color: var(--raspberry, #FF0070);
   --p-text-color: var(--rose, #FFC2E6);
   --header-bg-img: url(/images/cover-image-dark.png);
   --h1-text-color: var(--purple, #DB00FF);

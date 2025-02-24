@@ -11,6 +11,7 @@
   */
   --main-bg-color: var(--white, #FFF1F7);
   --accent-color: var(--pink-light, #F1B2CE);
+  --link-color: var(--pink, #FF8DCB);
   --p-text-color: var(--gray, #353430);
   --header-bg-img: url(/images/cover-image-light.png);
   --h1-text-color: var(--rose, #FFC2E6);
@@ -37,6 +38,7 @@
   :root {
     --main-bg-color: var(--white, #FFF1F7);
     --accent-color: var(--pink-light, #F1B2CE);
+    --link-color: var(--pink, #FF8DCB);
     --p-text-color: var(--gray, #353430);
     --header-bg-img: url(/images/cover-image-light.png);
     --h1-text-color: var(--rose, #FFC2E6);
@@ -52,5 +54,10 @@
     --button-color: var(--gray, #353430);
     --button-hover-color: var(--gray-transparent, rgba(255, 0, 112, 0.4));
     --bg-color: var(--white, #FFF1F7);
+  }
+
+  .header__rec::before,
+  .header__rec::after {
+    display: none;
   }
 }
