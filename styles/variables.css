@@ -53,3 +53,17 @@
   --button-hover-color: var(--raspberry-transparent, rgba(255, 0, 112, 0.4));
   --bg-color: var(--dark-blue, #000028);
 }
+
+@media (width >= 768px) {
+  :root {
+    --page-paddings: 20px;
+    --header-paddings: 20px;
+    --header-paddings-scale: 5.3;
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --header-paddings-scale: 1;
+  }
+}

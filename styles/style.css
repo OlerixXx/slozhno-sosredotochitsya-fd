@@ -278,24 +278,27 @@
     grid-auto-rows: auto;
   }
 
-  .content-section_v1 .content-section__title {
+  .content-section__concentration-is-hard .content-section__title,
+  .content-section__gold-fish .content-section__title {
     grid-row: span 2;
   }
 
-  .content-section_v1 .content-section__card {
+  .content-section__concentration-is-hard .content-section__card,
+  .content-section__gold-fish .content-section__card {
     grid-column: 2;
   }
 
-  .content-section_v1 .content-section__card:first-of-type .card__title {
+  .content-section__concentration-is-hard .content-section__card:first-of-type .card__title,
+  .content-section__gold-fish .content-section__card:first-of-type .card__title {
     margin: 0;
   }
 
-  .content-section_v2 .content-section__title {
+  .content-section__lapse-in-concentration .content-section__title {
     grid-column: 1;
     grid-row: 1;
   }
 
-  .content-section_v2 .content-section__card {
+  .content-section__lapse-in-concentration .content-section__card {
     grid-column: 1 / -1;
   }
 }
@@ -315,20 +318,21 @@
     max-inline-size: 491px;
   }
 
-  .content-section_v1 {
+  .content-section__concentration-is-hard,
+  .content-section__gold-fish {
     column-gap: 10px;
   }
 
-  .content-section_v2 {
+  .content-section__lapse-in-concentration {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .content-section_v2 .content-section__title {
+  .content-section__lapse-in-concentration .content-section__title {
     grid-column: 1 / 4;
     max-inline-size: 314px;
   }
 
-  .content-section_v2 .content-section__card {
+  .content-section__lapse-in-concentration .content-section__card {
     grid-column: auto;
     grid-row: auto;
   }
